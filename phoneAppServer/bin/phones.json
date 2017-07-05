@@ -1,0 +1,20 @@
+[
+	{
+		"name": "P8 Lite Black",
+		"brand": "Huawei",
+		"image": "http://media.stockisti.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/3/1343365_bb_00_fb.eps_1000_2_2.jpg",
+		"specs": ["1080p Display", "2GB RAM"]
+	},
+	{
+		"name": "iPhone 7S",
+		"brand": "Apple",
+		"image": "http://media.stockisti.com/media/catalog/product/cache/1/small_image/295x295/9df78eab33525d08d6e5fb8d27136e95/r/o/rose_1_1_1_2.png",
+		"specs": ["4.87 ounces", "12MP camera"]
+	},
+	{
+		"name": "G Flex2 H955",
+		"brand": "LG",
+		"image": "http://media.stockisti.com/media/catalog/product/cache/1/image/650x650/9df78eab33525d08d6e5fb8d27136e95/l/g/lg_g_flex_2_wide.png",
+		"specs": ["16GB Storage"]
+	}
+]

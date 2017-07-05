@@ -4,16 +4,29 @@ var favicon       = require('serve-favicon');
 var logger        = require('morgan');
 var cookieParser  = require('cookie-parser');
 var bodyParser    = require('body-parser');
-var mongoose = require('mongoose');
+var mongoose      = require('mongoose');
+var cors          = require('cors');
 
 var index         = require('./routes/index');
 var phonesApi     = require('./routes/phones-api');
 
-mongoose.connect(`mongodb://localhost/phone-store`);
-
 // database connection
-require('./configs/database');
+// we need to require the full file including extensions .js
+require('./configs/database.js');
 var app = express();
+
+
+/*
+
+    The Cross-Origin Resource Sharing (CORS) mechanism gives web servers 
+    cross-domain access controls, which enable secure cross-domain data transfers. 
+    Modern browsers use CORS in an API container - such as XMLHttpRequest or Fetch 
+    to mitigate risks of cross-origin HTTP requests.
+
+    By default browsers block this kind of communication for security reasons, 
+    so we need to configure our server in order to allow them.
+*/
+app.use(cors());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

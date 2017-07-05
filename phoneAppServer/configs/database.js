@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const dbName = 'phone-store';
 
 // connect to the database
-mongoose.connect(`mongodb://localhost/${dbName}`, { useMongoClient: true });
+mongoose.connect(`mongodb://localhost/${dbName}`);
 
 const db = mongoose.connection;
 
